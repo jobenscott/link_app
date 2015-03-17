@@ -1,7 +1,7 @@
 class PostsController < ApplicationController
  
   def index
-    @posts = Post.all
+    @posts = Post.all.order(vote: :desc)
   end
 
   def show

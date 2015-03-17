@@ -4,7 +4,7 @@
   <h2>Website:<%= post.title %></h2>
   <h3>URL:<%= post.url %></h3>
   <h3>Votes:<%= post.vote %></h3>
-  <%= link_to 'Show Post', post_path(post) %>
+  <div class="show_button"><%= link_to 'Show Post', post_path(post) %></div>
   <%= link_to 'Edit post', edit_post_path(post) %>
   <%= link_to 'Destroy post', post, method: :delete %>
   <%= link_to 'UpVote!', posts_vote_path(id: post.id) %>

@@ -2,6 +2,7 @@
 @import "bootstrap";
 
 body {
+    background-image: url("/assets/r2d2.jpg");
     margin: 35px auto;
     width: 640px;
     font-family: Helvetica;
@@ -12,14 +13,27 @@ header {
     text-align: center;
     margin: 0 0 20px;
 }
- 
+
+h1 {
+    color: #E6E6E6;
+}
+
+.show_button{
+    background-color: blue;
+    padding: 2px;
+    margin: 3px;
+    border-radius: 5px;
+    width: 82px;
+}
+
 header h1 {
+    color: #E6E6E6;
     display: inline;
     font-size: 32px;
 }
  
-header h1 a:link, header h1 a:visited {
-    color: #444;
+header h1, h2, h3, a:link, header h1 a:visited {
+    color: #E6E6E6;
     text-decoration: none;
 }
  
