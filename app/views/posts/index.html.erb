@@ -7,4 +7,5 @@
   <%= link_to 'Show Post', post_path(post) %>
   <%= link_to 'Edit post', edit_post_path(post) %>
   <%= link_to 'Destroy post', post, method: :delete %>
+  <%= link_to 'UpVote!', posts_vote_path(id: post.id) %>
 <% end %>

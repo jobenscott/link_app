@@ -22,10 +22,17 @@ class PostsController < ApplicationController
     end
   end
 
-
   def edit
     @post = Post.find(params[:id])
   end
+
+  def vote
+    @post = Post.find(params[:id])
+    @post.vote += 1
+    @post.save!
+    redirect_to posts_path
+  end
+
 
   def update
     @post = Post.find(params[:id])
