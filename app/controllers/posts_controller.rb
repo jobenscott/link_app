@@ -33,6 +33,12 @@ class PostsController < ApplicationController
     redirect_to posts_path
   end
 
+  def downvote
+    @post = Post.find(params[:id])
+    @post.vote -= 1
+    @post.save!
+    redirect_to posts_path
+  end
 
   def update
     @post = Post.find(params[:id])

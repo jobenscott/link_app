@@ -14,6 +14,7 @@ Rails.application.routes.draw do
 
   # get  'posts/destroy'
   get 'posts/vote'
+  get 'posts/downvote'
   resources :posts
   
 
